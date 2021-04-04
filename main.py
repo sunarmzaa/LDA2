@@ -3,11 +3,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def home(): 
-   return render_template('lda.html')
+   return render_template('index.html')
+   #return render_template('lda.html')
+
 
 @app.route('/about')
 def about(): 
    return render_template('about.html')
 
+@app.route('/lda')
+def lda(): 
+   return render_template('lda.html')   
+
+
 if __name__ == '__main__':
-   app.run(host="0.0.0.0", port=5000, debug=True)
+   app.run(host="localhost", port=5000, debug=True)
