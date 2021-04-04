@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,10 +12,40 @@
 <body>
 
 <div class="jumbotron text-center">
-  <h1>LDA</h1>
-  <!--<p><a href="/about">ดู about</a></p>-->
-  <p><a href="/lda">ดู Lda</a></p> 
+  <h1>Home</h1>
+  <br>
 
+  <form name="register" action="reg_setup.php" method="post">
+    ชื่อ: <input type="text" name="firstname" size=25>
+    <br>
+    <br>
+    นามสกุล: <input type="text" name="surname" size=25>
+    <br>
+    <br>
+    เพศ: <input type="radio" name="sex" value="male">male <input type="radio" name="sex" value="female">female
+    <br>
+    <br>
+    Email: <input type="text" name="email" size=25>
+    <br>
+    <br>
+    Password: <input type="number"  name="password" size=25>
+    <br>
+    <br>
+
+
+    ประเภทผู้ใช้: <select name="salary">
+      <option selected>กดเลือก</option>
+      <option value="5000">บุคคลในองค์กร</option>
+      <option value=">5000">บุคคลทั่วไป</option>
+    </select>
+    <br>
+    <br>
+    <input name="register" type="submit" value="ลงทะเบียน">    <input name="reset" type="reset" value="ลบข้อมูล">
+  </form>
+</br>
+
+<button><a href="/lda"> ดู Lda</button>
+  
 </div>
   
 </body>
