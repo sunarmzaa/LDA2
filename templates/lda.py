@@ -82,7 +82,7 @@ print('Number of documents: %d' % len(corpus))
 
 # Set training parameters.
 #num_topics = 12
-num_topics = 10
+num_topics = 12
 chunksize = 2000
 passes = 20
 iterations = 400
